@@ -12,19 +12,19 @@ y = 30
 velocidade = 4
 boost = 3
 
-fundo = pygame.image.load('mapa.png')
-direcao = pygame.image.load('linkcostas1.png')
+fundo = pygame.image.load('Imagens/mapa.png')
+direcao = pygame.image.load('Imagens/linkcostas1.png')
 
 #musica = pygame.mixer.music.load('Kakarino.mp3')
 #pygame.mixer.music.play(-1)
 
-cima = [pygame.image.load('linkcima1.png'), pygame.image.load('linkcima2.png')]
+cima = [pygame.image.load('Imagens/linkcima1.png'), pygame.image.load('Imagens/linkcima2.png')]
 
-baixo = pygame.image.load('linkbaixo2.png') #pygame.image.load('linkbaixo1.png'), 
+baixo = pygame.image.load('Imagens/linkbaixo2.png') #pygame.image.load('linkbaixo1.png'), 
 
-direita = [pygame.image.load('linkdireita1.png'), pygame.image.load('linkdireita2.png')]
+direita = [pygame.image.load('Imagens/linkdireita1.png'), pygame.image.load('Imagens/linkdireita2.png')]
 
-esquerda = [pygame.image.load('linkesquerda1.png'), pygame.image.load('linkesquerda2.png')]
+esquerda = [pygame.image.load('Imagens/linkesquerda1.png'), pygame.image.load('Imagens/linkesquerda2.png')]
 
 janela = pygame.display.set_mode((800,600))
 nomeArq = pygame.display.set_caption('Jogo em Python')
