@@ -71,5 +71,5 @@ if comandos[pygame.K_UP] or comandos[pygame.K_w]:
 
 [Código Completo do Jogo](jogo_parte1.py)
 
-No o momento atual é isto.
+No momento atual é isto.
 Até a próxima!
