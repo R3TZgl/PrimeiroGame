@@ -26,6 +26,10 @@ direita = [pygame.image.load('Imagens/linkdireita1.png'), pygame.image.load('Ima
 
 esquerda = [pygame.image.load('Imagens/linkesquerda1.png'), pygame.image.load('Imagens/linkesquerda2.png')]
 
+sprite = 1
+tempo = 0
+tempoAndar = 3
+
 janela = pygame.display.set_mode((800,600))
 nomeArq = pygame.display.set_caption('Jogo em Python')
 
@@ -48,9 +52,19 @@ while janelaAberta:
             else:
                 y -= velocidade
         
-        direcao = choice(cima)
+        if tempo == tempoAndar:
+            if sprite == 0:
+                sprite += 1
+            else:
+                sprite -= 1
+        if tempo == tempoAndar:
+            tempo -= tempoAndar
+        else:
+            tempo += 1
         
+        direcao = cima[sprite]
         
+           
     elif comandos[pygame.K_DOWN] or comandos[pygame.K_s]:
         if y < 515:
             if comandos[pygame.K_s] and comandos[pygame.K_LCTRL] or comandos[pygame.K_DOWN] and comandos[pygame.K_LCTRL]:
@@ -68,7 +82,17 @@ while janelaAberta:
             else:
                 x += velocidade
         
-        direcao = choice(direita)
+        if tempo == tempoAndar:
+            if sprite == 0:
+                sprite += 1
+            else:
+                sprite -= 1
+        if tempo == tempoAndar:
+            tempo -= tempoAndar
+        else:
+            tempo += 1
+            
+        direcao = direita[sprite]
         
         
     elif comandos[pygame.K_LEFT] or comandos[pygame.K_a]:
@@ -78,7 +102,17 @@ while janelaAberta:
             else:
                 x -= velocidade
         
-        direcao = choice(esquerda)
+        if tempo == tempoAndar:
+            if sprite == 0:
+                sprite += 1
+            else:
+                sprite -= 1
+        if tempo == tempoAndar:
+            tempo -= tempoAndar
+        else:
+            tempo += 1
+            
+        direcao = esquerda[sprite]
     
     
     janela.blit(fundo, (0,0))     
