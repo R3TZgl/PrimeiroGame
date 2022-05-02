@@ -107,8 +107,8 @@ while janelaAberta:
                 sprite += 1
             else:
                 sprite -= 1
+        
         if tempo == tempoAndar:
-            
             tempo -= tempoAndar
         else:
             tempo += 1
@@ -121,6 +121,4 @@ while janelaAberta:
     pygame.display.update()
     
     
-
-            
 pygame.quit()        
