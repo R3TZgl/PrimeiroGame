@@ -15,17 +15,18 @@ boost = 3
 fundo = pygame.image.load('Imagens/mapa.png')
 direcao = pygame.image.load('Imagens/linkcostas1.png')
 
-#musica = pygame.mixer.music.load('Kakarino.mp3')
-#pygame.mixer.music.play(-1)
+musica = pygame.mixer.music.load('Kakarino.mp3')
+pygame.mixer.music.play(-1)
 
 cima = [pygame.image.load('Imagens/linkcima1.png'), pygame.image.load('Imagens/linkcima2.png')]
 
-baixo = pygame.image.load('Imagens/linkbaixo2.png') #pygame.image.load('linkbaixo1.png'), 
+baixo = pygame.image.load('Imagens/linkbaixo2.png') #pygame.image.load('linkbaixo1.png') Perda de imagem. 
 
 direita = [pygame.image.load('Imagens/linkdireita1.png'), pygame.image.load('Imagens/linkdireita2.png')]
 
 esquerda = [pygame.image.load('Imagens/linkesquerda1.png'), pygame.image.load('Imagens/linkesquerda2.png')]
 
+#Variáveis para troca de sprites ao andar
 sprite = 1
 tempo = 0
 tempoAndar = 3
@@ -52,6 +53,7 @@ while janelaAberta:
             else:
                 y -= velocidade
         
+        #Estrutura para que a cada 3 loops de uma movimentação troque a sprite
         if tempo == tempoAndar:
             if sprite == 0:
                 sprite += 1
