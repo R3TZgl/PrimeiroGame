@@ -3,7 +3,7 @@
 ## Algumas informações e demonstrações a seguir
 
 O jogo é baseado no jogo Zelda Minish Cap.
-No entanto meu conhecimentos ainda são poucos neste momento em que comecei, mas irei atualizando sempre que aprender algo novo.
+No entanto meus conhecimentos ainda são poucos neste momento em que comecei, mas irei atualizando sempre que aprender algo novo.
 
 ## Imagens
 
